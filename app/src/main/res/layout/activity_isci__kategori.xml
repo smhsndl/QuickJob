@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo">
+
+    <ImageButton
+        android:id="@+id/btn_diger"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="20dp"
+        android:background="#DC2788"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tasarim"
+        app:srcCompat="@drawable/diger" />
+
+    <ImageButton
+        android:id="@+id/btn_hizmet"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:background="#DC2788"
+        app:layout_constraintEnd_toStartOf="@+id/btn_insaat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hizmetlogo" />
+
+    <ImageButton
+        android:id="@+id/btn_tarim"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:background="#DC2788"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_insaat"
+        app:srcCompat="@drawable/tarimlogo" />
+
+    <ImageButton
+        android:id="@+id/btn_tasarim"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:background="#DC2788"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yemek"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tamir"
+        app:srcCompat="@drawable/tasarimlogo" />
+
+    <ImageButton
+        android:id="@+id/btn_tamir"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:background="#DC2788"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tarim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hizmet"
+        app:srcCompat="@drawable/tamirlogo" />
+
+    <ImageButton
+        android:id="@+id/btn_yemek"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:background="#DC2788"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tarim"
+        app:srcCompat="@drawable/yemeklogo" />
+
+    <ImageButton
+        android:id="@+id/btn_insaat"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:background="#DC2788"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/insaatlogo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/fis"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:text="İş Arıyorum"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:backgroundTint="#DC2788"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <Button
+            android:id="@+id/fisci"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:text="İşçi Arıyorum"
+            android:textColor="#ffffff"
+            android:backgroundTint="#DC2788"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:backgroundTint="#DC2788"
+            android:src="@drawable/ic_baseline_add_24"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

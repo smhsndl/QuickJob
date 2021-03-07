@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".kaydol"></activity>
+        <activity android:name=".kategori" />
+        <activity android:name=".basarili" />
+        <activity android:name=".Isci_yemek" />
+        <activity android:name=".Isci_tasarim" />
+        <activity android:name=".Isci_tarim" />
+        <activity android:name=".Isci_tamir" />
+        <activity android:name=".Isci_insaat" />
+        <activity android:name=".Isci_hizmet" />
+        <activity android:name=".Isci_diger" />
+        <activity android:name=".Isci_Kategori" />
+        <activity android:name=".Is_yemek" />
+        <activity android:name=".Is_tasarim" />
+        <activity android:name=".Is_tarim" />
+        <activity android:name=".Is_tamir" />
+        <activity android:name=".Is_insaat" />
+        <activity android:name=".Is_hizmet" />
+        <activity android:name=".Is_diger" />
+        <activity android:name=".Ilan" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
